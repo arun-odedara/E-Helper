@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Select Mode"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#D62741"
+            android:orientation="vertical" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#8f8f8f" >
+
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/buttonshape"
+                android:textOn="Red mode: ON"
+                android:textOff="Red mode: OFF"
+                android:textColor="#E53939" />
+
+            <ToggleButton
+                android:id="@+id/green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/buttonshape"
+                
+                android:textOn="Green mode: ON"
+                android:textOff="Green mode: OFF"
+                android:textColor="#6DC066" />
+
+            <ToggleButton
+                android:id="@+id/yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/buttonshape"
+                android:textOn="Yellow mode: ON"
+                android:textOff="Yellow mode: OFF"
+                android:textColor="#FFD700" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/policebutton"
+                android:text="find nearby police"
+                android:textColor="#FA5C19" />
+            
+              <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/policebutton"
+                android:text="find nearby hospitals"
+                android:textColor="#FA5C19" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
